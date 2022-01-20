@@ -13,7 +13,8 @@ public class Fantasy implements CompactDisk {
     private String name = "依然范特西";
     private Double price = 100.00;
 
+    @Override
     public void play() {
-        System.out.println("play");
+        System.out.println(this.name + " is playing");
     }
 }

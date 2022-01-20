@@ -1,6 +1,6 @@
 package pojo;
 
-import config.CDPlayerConfig;
+import config.BeanConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import pojo.cd.CompactDisk;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = CDPlayerConfig.class)
+@ContextConfiguration(classes = BeanConfig.class)
 public class FantasyTest {
     @Autowired
     private CompactDisk cd;

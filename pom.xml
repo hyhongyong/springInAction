@@ -30,6 +30,12 @@
             <version>4.12</version>
             <!-- junit的版本有3.x, 4.x, 5.x 5.x还没有发布, 现在都用是4.x -->
         </dependency>
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1.4.2</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
