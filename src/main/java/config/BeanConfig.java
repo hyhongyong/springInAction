@@ -18,11 +18,11 @@ public class BeanConfig {
             case 0:
                 return new BlankCD();
             case 1:
-                return new BlankCD("珊瑚海", 150.00);
+                return new BlankCD("珊瑚海", 150.00, null);
             case 2:
-                return new BlankCD("斗牛要不要", 200.00);
+                return new BlankCD("斗牛要不要", 200.00, null);
             default:
-                return new BlankCD("七里香", 120.00);
+                return new BlankCD("七里香", 120.00, null);
         }
     }
 

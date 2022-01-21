@@ -32,5 +32,7 @@ public class CDPlayerTest extends TestCase {
         System.out.println(anotherMediaPlayer.hashCode());
         System.out.println(mediaPlayer.hashCode());
         System.out.println(anotherMediaPlayer.equals(mediaPlayer));
+        System.out.println(anotherMediaPlayer);
+        System.out.println(mediaPlayer);
     }
 }

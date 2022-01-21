@@ -5,7 +5,19 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="fantasy" class="pojo.cd.BlankCD"></bean>
+    <bean id="fantasy" class="pojo.cd.BlankCD">
+        <constructor-arg value="牛仔很忙"/>
+        <constructor-arg value="88.00"/>
+        <constructor-arg>
+            <list>
+                <value>"牛仔很忙"</value>
+                <value>"七里香"</value>
+                <value>"稻香"</value>
+                <value>"退后"</value>
+                <value>"珊瑚海"</value>
+            </list>
+        </constructor-arg>
+    </bean>
 
     <bean id="CDPlayer" class="pojo.player.CDPlayer">
         <!--    原标签    -->
