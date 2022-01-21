@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="fantasy" class="pojo.cd.Fantasy"></bean>
+    <bean id="fantasy" class="pojo.cd.BlankCD"></bean>
 
     <bean id="CDPlayer" class="pojo.player.CDPlayer">
         <!--    原标签    -->

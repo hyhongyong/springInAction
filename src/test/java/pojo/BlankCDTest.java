@@ -11,7 +11,7 @@ import pojo.cd.CompactDisk;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = BeanConfig.class)
-public class FantasyTest {
+public class BlankCDTest {
     @Autowired
     private CompactDisk cd;
 

@@ -3,8 +3,8 @@ package config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import pojo.cd.BlankCD;
 import pojo.cd.CompactDisk;
-import pojo.cd.Fantasy;
 import pojo.player.CDPlayer;
 import pojo.player.MediaPlayer;
 
@@ -16,13 +16,13 @@ public class BeanConfig {
         Integer choice = Integer.valueOf((int) Math.floor(Math.random() * 4));
         switch (choice) {  // 发挥Java的强大威力
             case 0:
-                return new Fantasy();
+                return new BlankCD();
             case 1:
-                return new Fantasy("珊瑚海", 150.00);
+                return new BlankCD("珊瑚海", 150.00);
             case 2:
-                return new Fantasy("斗牛要不要", 200.00);
+                return new BlankCD("斗牛要不要", 200.00);
             default:
-                return new Fantasy("七里香", 120.00);
+                return new BlankCD("七里香", 120.00);
         }
     }
 

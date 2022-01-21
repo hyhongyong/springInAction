@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 @NoArgsConstructor
 @Component
-public class Fantasy implements CompactDisk {
+public class BlankCD implements CompactDisk {
     private String name = "依然范特西";
     private Double price = 100.00;
 
