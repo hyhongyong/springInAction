@@ -3,7 +3,6 @@ package pojo.player;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import pojo.cd.CompactDisk;
 
@@ -25,12 +24,12 @@ public class CDPlayer implements MediaPlayer {
     @Autowired
     public void setCd(CompactDisk cd) {  // set方法注入
         this.cd = cd;
-    }*/
+    }
 
     @Autowired
     public void insertCd(CompactDisk cd) {  // 任意方法注入
         this.cd = cd;
-    }
+    }*/
 
     @Override
     public void play() {

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="fantasy" class="pojo.cd.Fantasy"></bean>
+
+    <bean id="CDPlayer" class="pojo.player.CDPlayer">
+        <!--    原标签    -->
+        <constructor-arg ref="fantasy"></constructor-arg>
+    </bean>
+
+    <!--     c命名空间，写在bean标签内，与id同级     -->
+    <bean id="anotherCDPlayer" class="pojo.player.CDPlayer"
+          c:cd-ref="fantasy">
+    </bean>
+
+</beans>
