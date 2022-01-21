@@ -1,10 +1,16 @@
 package pojo.player;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import pojo.cd.CompactDisk;
 
 @Component
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 //@ComponentScan(basePackageClasses = CompactDisk.class)
 public class CDPlayer implements MediaPlayer {
     private CompactDisk cd;

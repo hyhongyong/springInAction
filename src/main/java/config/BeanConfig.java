@@ -12,10 +12,18 @@ import pojo.player.MediaPlayer;
 public class BeanConfig {
     @Bean  // 基于JavaConfig的显示配置
     public CompactDisk fantasy() {
-        return new Fantasy();
+        Integer choice = Integer.valueOf((int) Math.floor(Math.random() * 3));
+        switch (choice) {  // 发挥Java的强大威力
+            case 0:
+                return new Fantasy();
+            case 1:
+                return new Fantasy("珊瑚海", 150.00);
+            default:
+                return new Fantasy("七里香", 120.00);
+        }
     }
 
-    @Bean
+    @Bean(name = "cDPlayer")
     public MediaPlayer cdPlayer() {
         return new CDPlayer();
     }
